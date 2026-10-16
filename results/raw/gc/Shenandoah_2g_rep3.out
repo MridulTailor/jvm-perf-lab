@@ -1,0 +1,5 @@
+[GcHarness] Starting workload=allocation, duration=60s, warmup=5s, threads=1, retention=0.050, heapMax=2048MB
+[GcHarness] Finished: completed 4696568 ops in 60.001 s (78274.83 ops/sec, sink=-8801959974654782242)
+JSON_REPORT_BEGIN
+{"workload":"allocation","duration_sec":60.0010,"threads":1,"seed":45,"retention_fraction":0.0500,"total_ops":4696568,"throughput_ops_sec":78274.83}
+JSON_REPORT_END
