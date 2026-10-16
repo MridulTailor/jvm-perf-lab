@@ -35,49 +35,13 @@ All metrics below are derived directly from raw benchmark artifacts (`results/ra
 
 ---
 
-## Repository Structure
+## Visual Benchmark Charts
 
-```
-jvm-perf-lab/
-  pom.xml                      # Maven build: Java 21, JMH 1.37, JUnit 5.10.2
-  README.md                    # Project overview, reproduction guide, and findings
-  scripts/
-    env_capture.sh             # Hardware & Corretto 21 flag validation
-    run_jmh.sh                 # JMH runner (QUICK and FULL modes)
-    run_gc_bench.sh            # Multi-collector isolated JVM runner
-    run_jit_diagnostics.sh     # PrintCompilation and PrintInlining runner
-    run_warmup.sh              # JIT compilation tier warmup runner
-    run_profile.sh             # async-profiler (with JFR fallback) runner
-    parse_gc.py                # Unified GC log parser
-    parse_jit.py               # JIT diagnostic log parser
-    parse_profile.py           # Top-frames self-time extractor
-    plot_warmup.py             # Vector SVG warmup curve generator
-    plot_gc.py                 # Vector SVG GC pause latency chart generator
-    report.py                  # Generates RESULTS.md and KEY_METRICS.md
-    smoke.sh                   # End-to-end QUICK pipeline verification (<5 min)
-  src/main/java/lab/
-    workload/
-      AllocationHeavy.java     # Mixed-size object allocations with bounded old-gen retention
-      PointerChasing.java      # Sattolo cycle randomized graph traversal stressing cache lines
-      EscapeAnalysisCase.java  # Scalar-replaceable NoEscape vs GlobalEscape allocations
-      InliningCase.java        # Small methods vs oversized method, mono vs megamorphic dispatch
-    harness/
-      GcHarness.java           # Standalone multi-threaded timed GC evaluation harness
-      WarmupRunner.java        # Per-iteration throughput measurement harness
-  src/jmh/java/lab/jmh/        # JMH benchmark suites
-  src/test/java/lab/           # JUnit 5 determinism, equivalence, and parser fixture tests
-  src/test/resources/fixtures/ # Test fixtures for GC and JIT diagnostic logs
-  results/
-    raw/                       # Raw JMH JSON, GC logs, JIT logs, flame graphs
-    processed/                 # Summarized CSV and JSON tables
-    env.json                   # Captured hardware, OS, and JDK properties
-  docs/
-    RESULTS.md                 # Full auto-generated performance matrices
-    FINDINGS.md                # In-depth architectural analysis and verified hypotheses
-    KEY_METRICS.md             # Formatted key metrics with confidence intervals
-    warmup_curve.svg           # Vector JIT warmup curve chart
-    gc_pauses.svg              # Vector GC pause latency comparison chart
-```
+### Garbage Collection Pause Latency Comparison (2GB Heap)
+![Garbage Collection Pause Latencies](docs/gc_pauses.svg)
+
+### JIT Compilation Warmup Dynamics (Tiered vs C1 vs Interpreter)
+![JIT Compilation Warmup Dynamics](docs/warmup_curve.svg)
 
 ---
 
