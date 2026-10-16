@@ -1,0 +1,6 @@
+target/
+.jdk/
+.DS_Store
+.idea/
+*.iml
+*.class
