@@ -1,0 +1,430 @@
+--- Execution profile ---
+Total samples       : 1847
+
+--- 6220000000 ns (33.68%), 622 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 6070000000 ns (32.86%), 607 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 2320000000 ns (12.56%), 232 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 1240000000 ns (6.71%), 124 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 1130000000 ns (6.12%), 113 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 450000000 ns (2.44%), 45 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 280000000 ns (1.52%), 28 samples
+  [ 0] __psynch_cvwait
+  [ 1] PlatformMonitor::wait
+  [ 2] Monitor::wait_without_safepoint_check
+  [ 3] WatcherThread::sleep
+  [ 4] WatcherThread::run
+  [ 5] Thread::call_run
+  [ 6] thread_native_entry
+  [ 7] _pthread_start
+  [ 8] thread_start
+
+--- 200000000 ns (1.08%), 20 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 50000000 ns (0.27%), 5 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 40000000 ns (0.22%), 4 samples
+  [ 0] java.util.concurrent.atomic.LongAdder.add
+  [ 1] java.util.concurrent.atomic.LongAdder.increment
+  [ 2] lab.harness.GcHarness.lambda$main$0
+  [ 3] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 4] java.lang.Thread.runWith
+  [ 5] java.lang.Thread.run
+
+--- 40000000 ns (0.22%), 4 samples
+  [ 0] __psynch_cvwait
+  [ 1] PlatformMonitor::wait
+  [ 2] Monitor::wait_without_safepoint_check
+  [ 3] MonitorDeflationThread::monitor_deflation_thread_entry
+  [ 4] JavaThread::thread_main_inner
+  [ 5] Thread::call_run
+  [ 6] thread_native_entry
+  [ 7] _pthread_start
+  [ 8] thread_start
+
+--- 40000000 ns (0.22%), 4 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 40000000 ns (0.22%), 4 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 30000000 ns (0.16%), 3 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 30000000 ns (0.16%), 3 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 20000000 ns (0.11%), 2 samples
+  [ 0] Monitor::wait_without_safepoint_check
+  [ 1] WatcherThread::sleep
+  [ 2] WatcherThread::run
+  [ 3] Thread::call_run
+  [ 4] thread_native_entry
+  [ 5] _pthread_start
+  [ 6] thread_start
+
+--- 20000000 ns (0.11%), 2 samples
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] AdapterHandlerLibrary::get_adapter
+  [ 1] Method::link_method
+  [ 2] InstanceKlass::link_methods
+  [ 3] InstanceKlass::link_class_impl
+  [ 4] InstanceKlass::initialize_impl
+  [ 5] LinkResolver::resolve_static_call
+  [ 6] LinkResolver::resolve_invoke
+  [ 7] InterpreterRuntime::resolve_invoke
+  [ 8] InterpreterRuntime::resolve_from_cache
+  [ 9] java.util.SplittableRandom.<clinit>
+  [10] lab.workload.PointerChasing.<init>
+  [11] lab.harness.GcHarness.lambda$main$0
+  [12] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [13] java.lang.Thread.runWith
+  [14] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] Mutex::lock_without_safepoint_check
+  [ 1] WatcherThread::run
+  [ 2] Thread::call_run
+  [ 3] thread_native_entry
+  [ 4] _pthread_start
+  [ 5] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] MacroAssembler::mov_metadata
+  [ 1] LIR_Assembler::const2reg
+  [ 2] LIR_Assembler::emit_lir_list
+  [ 3] LIR_Assembler::emit_code
+  [ 4] Compilation::emit_code_body
+  [ 5] Compilation::compile_java_method
+  [ 6] Compilation::compile_method
+  [ 7] Compilation::Compilation
+  [ 8] Compiler::compile_method
+  [ 9] CompileBroker::invoke_compiler_on_method
+  [10] CompileBroker::compiler_thread_loop
+  [11] JavaThread::thread_main_inner
+  [12] Thread::call_run
+  [13] thread_native_entry
+  [14] _pthread_start
+  [15] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] __gettimeofday
+  [ 1] PlatformMonitor::wait
+  [ 2] Monitor::wait_without_safepoint_check
+  [ 3] MonitorDeflationThread::monitor_deflation_thread_entry
+  [ 4] JavaThread::thread_main_inner
+  [ 5] Thread::call_run
+  [ 6] thread_native_entry
+  [ 7] _pthread_start
+  [ 8] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] __psynch_cvwait
+  [ 1] PlatformEvent::park_nanos
+  [ 2] JavaThread::sleep_nanos
+  [ 3] JVM_Sleep
+  [ 4] java.lang.Thread.sleep0
+  [ 5] java.lang.Thread.sleep
+  [ 6] lab.harness.GcHarness.main
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] java.lang.invoke.VarHandleLongs$FieldInstanceReadWrite.weakCompareAndSetRelease
+  [ 1] java.lang.invoke.VarHandleGuards.guard_LJJ_Z
+  [ 2] java.util.concurrent.atomic.Striped64.casBase
+  [ 3] java.util.concurrent.atomic.LongAdder.add
+  [ 4] lab.harness.GcHarness.lambda$main$0
+  [ 5] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 6] java.lang.Thread.runWith
+  [ 7] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] __psynch_cvwait
+  [ 1] PlatformMonitor::wait
+  [ 2] Monitor::wait_without_safepoint_check
+  [ 3] G1ServiceThread::wait_for_task
+  [ 4] G1ServiceThread::run_service
+  [ 5] ConcurrentGCThread::run
+  [ 6] Thread::call_run
+  [ 7] thread_native_entry
+  [ 8] _pthread_start
+  [ 9] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] java.lang.invoke.VarHandleLongs$FieldInstanceReadWrite.weakCompareAndSetRelease
+  [ 1] java.lang.invoke.VarHandleGuards.guard_LJJ_Z
+  [ 2] java.util.concurrent.atomic.Striped64.casBase
+  [ 3] java.util.concurrent.atomic.LongAdder.add
+  [ 4] java.util.concurrent.atomic.LongAdder.increment
+  [ 5] lab.harness.GcHarness.lambda$main$0
+  [ 6] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 7] java.lang.Thread.runWith
+  [ 8] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] java.util.concurrent.atomic.AtomicBoolean.get
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] __psynch_cvwait
+  [ 1] PlatformMonitor::wait
+  [ 2] Monitor::wait_without_safepoint_check
+  [ 3] ServiceThread::service_thread_entry
+  [ 4] JavaThread::thread_main_inner
+  [ 5] Thread::call_run
+  [ 6] thread_native_entry
+  [ 7] _pthread_start
+  [ 8] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] lab.harness.GcHarness.lambda$main$0
+  [ 1] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 2] java.lang.Thread.runWith
+  [ 3] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] java.lang.String.charAt
+  [ 1] java.util.regex.Pattern$BmpCharPropertyGreedy.match
+  [ 2] java.util.regex.Pattern$Start.match
+  [ 3] java.util.regex.Matcher.search
+  [ 4] java.util.regex.Matcher.find
+  [ 5] java.util.regex.Pattern.split
+  [ 6] java.util.regex.Pattern.split
+  [ 7] java.lang.String.split
+  [ 8] java.lang.String.split
+  [ 9] sun.util.cldr.CLDRLocaleProviderAdapter.createLanguageTagSet
+  [10] sun.util.locale.provider.JRELocaleProviderAdapter.getLanguageTagSet
+  [11] sun.util.locale.provider.JRELocaleProviderAdapter.lambda$getDecimalFormatSymbolsProvider$4
+  [12] sun.util.locale.provider.JRELocaleProviderAdapter$$Lambda.0x800000066.run
+  [13] java.security.AccessController.executePrivileged
+  [14] java.security.AccessController.doPrivileged
+  [15] sun.util.locale.provider.JRELocaleProviderAdapter.getDecimalFormatSymbolsProvider
+  [16] sun.util.locale.provider.JRELocaleProviderAdapter.getLocaleServiceProvider
+  [17] sun.util.locale.provider.LocaleProviderAdapter.findAdapter
+  [18] sun.util.locale.provider.LocaleProviderAdapter.getAdapter
+  [19] java.text.DecimalFormatSymbols.getInstance
+  [20] java.util.Formatter.getDecimalFormatSymbols
+  [21] java.util.Formatter.getZero
+  [22] java.util.Formatter$FormatSpecifier.localizedMagnitude
+  [23] java.util.Formatter$FormatSpecifier.print
+  [24] java.util.Formatter$FormatSpecifier.print
+  [25] java.util.Formatter$FormatSpecifier.printInteger
+  [26] java.util.Formatter$FormatSpecifier.print
+  [27] java.util.Formatter.format
+  [28] java.io.PrintStream.implFormat
+  [29] java.io.PrintStream.format
+  [30] java.io.PrintStream.printf
+  [31] lab.harness.GcHarness.main
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] tlv_get_addr
+  [ 1] TypeInstPtr::make
+  [ 2] TypeOopPtr::make_from_klass_common
+  [ 3] TypeTuple::make_domain
+  [ 4] TypeFunc::make
+  [ 5] Compile::Compile
+  [ 6] C2Compiler::compile_method
+  [ 7] CompileBroker::invoke_compiler_on_method
+  [ 8] CompileBroker::compiler_thread_loop
+  [ 9] JavaThread::thread_main_inner
+  [10] Thread::call_run
+  [11] thread_native_entry
+  [12] _pthread_start
+  [13] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] VMThread::wait_for_operation
+  [ 1] VMThread::run
+  [ 2] Thread::call_run
+  [ 3] thread_native_entry
+  [ 4] _pthread_start
+  [ 5] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] lab.workload.PointerChasing.traverse
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] PlatformMonitor::wait
+  [ 1] WatcherThread::sleep
+  [ 2] WatcherThread::run
+  [ 3] Thread::call_run
+  [ 4] thread_native_entry
+  [ 5] _pthread_start
+  [ 6] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] _pthread_cond_wait
+  [ 1] PlatformMonitor::wait
+  [ 2] Monitor::wait_without_safepoint_check
+  [ 3] MonitorDeflationThread::monitor_deflation_thread_entry
+  [ 4] JavaThread::thread_main_inner
+  [ 5] Thread::call_run
+  [ 6] thread_native_entry
+  [ 7] _pthread_start
+  [ 8] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] __gettimeofday
+  [ 1] PlatformMonitor::wait
+  [ 2] Monitor::wait_without_safepoint_check
+  [ 3] WatcherThread::sleep
+  [ 4] WatcherThread::run
+  [ 5] Thread::call_run
+  [ 6] thread_native_entry
+  [ 7] _pthread_start
+  [ 8] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] PhaseAggressiveCoalesce::insert_copies
+  [ 1] PhaseChaitin::Register_Allocate
+  [ 2] Compile::Code_Gen
+  [ 3] Compile::Compile
+  [ 4] C2Compiler::compile_method
+  [ 5] CompileBroker::invoke_compiler_on_method
+  [ 6] CompileBroker::compiler_thread_loop
+  [ 7] JavaThread::thread_main_inner
+  [ 8] Thread::call_run
+  [ 9] thread_native_entry
+  [10] _pthread_start
+  [11] thread_start
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] java.util.concurrent.atomic.AtomicBoolean.get
+  [ 1] lab.harness.GcHarness.lambda$main$0
+  [ 2] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 3] java.lang.Thread.runWith
+  [ 4] java.lang.Thread.run
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] InvocationCounter::init
+  [ 1] MethodCounters::allocate_with_exception
+  [ 2] Method::build_method_counters
+  [ 3] InterpreterRuntime::build_method_counters
+  [ 4] java.lang.Thread.contextClassLoader
+  [ 5] java.lang.Thread.<init>
+  [ 6] java.lang.Thread.<init>
+
+--- 10000000 ns (0.05%), 1 sample
+  [ 0] java.lang.invoke.VarHandleLongs$FieldInstanceReadWrite.weakCompareAndSetRelease
+  [ 1] java.lang.invoke.VarHandleGuards.guard_LJJ_Z
+  [ 2] java.util.concurrent.atomic.Striped64.casBase
+  [ 3] java.util.concurrent.atomic.LongAdder.add
+  [ 4] lab.harness.GcHarness.lambda$main$0
+  [ 5] lab.harness.GcHarness$$Lambda.0x0000007001000a08.run
+  [ 6] java.lang.Thread.runWith
+  [ 7] java.lang.Thread.run
+
+          ns  percent  samples  top
+  ----------  -------  -------  ---
+ 17880000000   96.81%     1788  lab.workload.PointerChasing.traverse
+   350000000    1.89%       35  __psynch_cvwait
+    40000000    0.22%        4  java.util.concurrent.atomic.LongAdder.add
+    30000000    0.16%        3  java.lang.invoke.VarHandleLongs$FieldInstanceReadWrite.weakCompareAndSetRelease
+    20000000    0.11%        2  Monitor::wait_without_safepoint_check
+    20000000    0.11%        2  __gettimeofday
+    20000000    0.11%        2  java.util.concurrent.atomic.AtomicBoolean.get
+    10000000    0.05%        1  AdapterHandlerLibrary::get_adapter
+    10000000    0.05%        1  InvocationCounter::init
+    10000000    0.05%        1  MacroAssembler::mov_metadata
+    10000000    0.05%        1  Mutex::lock_without_safepoint_check
+    10000000    0.05%        1  PhaseAggressiveCoalesce::insert_copies
+    10000000    0.05%        1  PlatformMonitor::wait
+    10000000    0.05%        1  VMThread::wait_for_operation
+    10000000    0.05%        1  _pthread_cond_wait
+    10000000    0.05%        1  java.lang.String.charAt
+    10000000    0.05%        1  lab.harness.GcHarness.lambda$main$0
+    10000000    0.05%        1  tlv_get_addr

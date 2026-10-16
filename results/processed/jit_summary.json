@@ -1,0 +1,214 @@
+{
+  "log_file": "inlining_jit.log",
+  "compilations": {
+    "total": 147,
+    "c1_tier1": 17,
+    "c1_tier2": 5,
+    "c1_tier3": 106,
+    "c2_tier4": 19,
+    "osr_count": 8
+  },
+  "inlining_summary": {
+    "total_decisions": 492,
+    "inlined": 267,
+    "too_big": 121,
+    "virtual_or_megamorphic": 0,
+    "other_not_inlined": 104
+  },
+  "key_methods": {
+    "lab.workload.InliningCase::stage1": [
+      {
+        "byte_size": 8,
+        "decision": "inlined",
+        "reason": "inline"
+      },
+      {
+        "byte_size": 8,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 8,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 8,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 8,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 8,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      }
+    ],
+    "lab.workload.InliningCase::stage2": [
+      {
+        "byte_size": 12,
+        "decision": "other_not_inlined",
+        "reason": "callee uses too much stack"
+      },
+      {
+        "byte_size": 12,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 12,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 12,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 12,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 12,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      }
+    ],
+    "lab.workload.InliningCase::stage3": [
+      {
+        "byte_size": 6,
+        "decision": "inlined",
+        "reason": "inline"
+      },
+      {
+        "byte_size": 6,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 6,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 6,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 6,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 6,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      }
+    ],
+    "lab.workload.InliningCase::stage4": [
+      {
+        "byte_size": 11,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 11,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 11,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 11,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 11,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      }
+    ],
+    "lab.workload.InliningCase::computeSmallPipeline": [
+      {
+        "byte_size": 24,
+        "decision": "other_not_inlined",
+        "reason": "callee uses too much stack"
+      },
+      {
+        "byte_size": 24,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 24,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 24,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 24,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      }
+    ],
+    "lab.workload.InliningCase::<init>": [
+      {
+        "byte_size": 64,
+        "decision": "too_big",
+        "reason": "callee is too large"
+      },
+      {
+        "byte_size": 64,
+        "decision": "too_big",
+        "reason": "callee is too large"
+      },
+      {
+        "byte_size": 64,
+        "decision": "too_big",
+        "reason": "callee is too large"
+      }
+    ],
+    "lab.workload.InliningCase::computeSmallMethods": [
+      {
+        "byte_size": 32,
+        "decision": "other_not_inlined",
+        "reason": "inlining prohibited by policy"
+      },
+      {
+        "byte_size": 32,
+        "decision": "other_not_inlined",
+        "reason": "inlining prohibited by policy"
+      },
+      {
+        "byte_size": 32,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      },
+      {
+        "byte_size": 32,
+        "decision": "other_not_inlined",
+        "reason": "inlining prohibited by policy"
+      },
+      {
+        "byte_size": 32,
+        "decision": "inlined",
+        "reason": "inline (hot)"
+      }
+    ]
+  }
+}

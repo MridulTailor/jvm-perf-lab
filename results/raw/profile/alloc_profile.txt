@@ -1,0 +1,103 @@
+--- Execution profile ---
+Total samples       : 100906
+
+--- 39661262976 bytes (74.97%), 75648 samples
+  [ 0] byte[]
+  [ 1] lab.workload.AllocationHeavy.step
+  [ 2] lab.harness.GcHarness.lambda$main$0
+  [ 3] lab.harness.GcHarness$$Lambda.0x000000b001000a08.run
+  [ 4] java.lang.Thread.runWith
+  [ 5] java.lang.Thread.run
+
+--- 7896286507 bytes (14.93%), 15061 samples
+  [ 0] byte[]
+  [ 1] lab.workload.AllocationHeavy.step
+  [ 2] lab.harness.GcHarness.lambda$main$0
+  [ 3] lab.harness.GcHarness$$Lambda.0x000000b001000a08.run
+  [ 4] java.lang.Thread.runWith
+  [ 5] java.lang.Thread.run
+
+--- 4454342352 bytes (8.42%), 8496 samples
+  [ 0] lab.workload.AllocationHeavy$ShortLivedPayload
+  [ 1] lab.workload.AllocationHeavy.step
+  [ 2] lab.harness.GcHarness.lambda$main$0
+  [ 3] lab.harness.GcHarness$$Lambda.0x000000b001000a08.run
+  [ 4] java.lang.Thread.runWith
+  [ 5] java.lang.Thread.run
+
+--- 890763613 bytes (1.68%), 1699 samples
+  [ 0] lab.workload.AllocationHeavy$ShortLivedPayload
+  [ 1] lab.workload.AllocationHeavy.step
+  [ 2] lab.harness.GcHarness.lambda$main$0
+  [ 3] lab.harness.GcHarness$$Lambda.0x000000b001000a08.run
+  [ 4] java.lang.Thread.runWith
+  [ 5] java.lang.Thread.run
+
+--- 524287 bytes (0.00%), 1 sample
+  [ 0] java.util.concurrent.ConcurrentHashMap$Node
+  [ 1] java.util.concurrent.ConcurrentHashMap.putVal
+  [ 2] java.util.concurrent.ConcurrentHashMap.putIfAbsent
+  [ 3] jdk.internal.util.ReferencedKeyMap.internKey
+  [ 4] jdk.internal.util.ReferencedKeyMap.intern
+  [ 5] jdk.internal.util.ReferencedKeySet.intern
+  [ 6] java.lang.invoke.MethodType.makeImpl
+  [ 7] java.lang.invoke.MethodType.insertParameterTypes
+  [ 8] java.lang.invoke.MethodType.appendParameterTypes
+  [ 9] java.lang.invoke.DirectMethodHandle.makePreparedLambdaForm
+  [10] java.lang.invoke.DirectMethodHandle.preparedLambdaForm
+  [11] java.lang.invoke.DirectMethodHandle.preparedLambdaForm
+  [12] java.lang.invoke.DirectMethodHandle.preparedLambdaForm
+  [13] java.lang.invoke.DirectMethodHandle.make
+  [14] java.lang.invoke.DirectMethodHandle.make
+  [15] java.lang.invoke.DirectMethodHandle.make
+  [16] java.lang.invoke.Invokers.basicInvoker
+  [17] java.lang.invoke.LambdaForm$NamedFunction.<init>
+  [18] java.lang.invoke.LambdaForm$Name.<init>
+  [19] java.lang.invoke.DelegatingMethodHandle.makeReinvokerForm
+  [20] java.lang.invoke.DelegatingMethodHandle.makeReinvokerForm
+  [21] java.lang.invoke.BoundMethodHandle.makeReinvoker
+  [22] java.lang.invoke.DirectMethodHandle.rebind
+  [23] java.lang.invoke.StringConcatFactory.mixer
+  [24] java.lang.invoke.StringConcatFactory.foldInLastMixers
+  [25] java.lang.invoke.StringConcatFactory.filterAndFoldInMixers
+  [26] java.lang.invoke.StringConcatFactory.generateMHInlineCopy
+  [27] java.lang.invoke.StringConcatFactory.makeConcatWithConstants
+  [28] java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+  [29] java.lang.invoke.DelegatingMethodHandle$Holder.delegate
+  [30] java.lang.invoke.Invokers$Holder.invokeExact_MT
+  [31] java.lang.invoke.BootstrapMethodInvoker.invoke
+  [32] java.lang.invoke.CallSite.makeSite
+  [33] java.lang.invoke.MethodHandleNatives.linkCallSiteImpl
+  [34] java.lang.invoke.MethodHandleNatives.linkCallSite
+  [35] lab.harness.GcHarness.main
+
+--- 524287 bytes (0.00%), 1 sample
+  [ 0] jdk.internal.org.objectweb.asm.MethodWriter
+  [ 1] jdk.internal.org.objectweb.asm.ClassWriter.visitMethod
+  [ 2] java.lang.invoke.InvokerBytecodeGenerator.clinit
+  [ 3] java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCodeBytes
+  [ 4] java.lang.invoke.InvokerBytecodeGenerator.generateCustomizedCode
+  [ 5] java.lang.invoke.LambdaForm.compileToBytecode
+  [ 6] java.lang.invoke.LambdaForm.prepare
+  [ 7] java.lang.invoke.MethodHandle.<init>
+  [ 8] java.lang.invoke.BoundMethodHandle.<init>
+  [ 9] java.lang.invoke.BoundMethodHandle$Species_L.<init>
+  [10] java.lang.invoke.BoundMethodHandle$Species_L.copyWith
+  [11] java.lang.invoke.MethodHandles.dropArgumentsTrusted
+  [12] java.lang.invoke.StringConcatFactory.generateMHInlineCopy
+  [13] java.lang.invoke.StringConcatFactory.makeConcatWithConstants
+  [14] java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+  [15] java.lang.invoke.DelegatingMethodHandle$Holder.delegate
+  [16] java.lang.invoke.Invokers$Holder.invokeExact_MT
+  [17] java.lang.invoke.BootstrapMethodInvoker.invoke
+  [18] java.lang.invoke.CallSite.makeSite
+  [19] java.lang.invoke.MethodHandleNatives.linkCallSiteImpl
+  [20] java.lang.invoke.MethodHandleNatives.linkCallSite
+  [21] lab.harness.GcHarness.main
+
+       bytes  percent  samples  top
+  ----------  -------  -------  ---
+ 47557549483   89.89%    90709  byte[]
+  5345105965   10.10%    10195  lab.workload.AllocationHeavy$ShortLivedPayload
+      524287    0.00%        1  java.util.concurrent.ConcurrentHashMap$Node
+      524287    0.00%        1  jdk.internal.org.objectweb.asm.MethodWriter

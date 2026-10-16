@@ -1,0 +1,7 @@
+{
+  "profiler_used": "async-profiler 4.5",
+  "mode": "FULL",
+  "duration_sec": 15,
+  "cpu_workload": "PointerChasing",
+  "alloc_workload": "AllocationHeavy"
+}

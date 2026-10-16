@@ -1,0 +1,5 @@
+rank,frame,samples,self_pct,cumulative_pct
+1,lab.workload.PointerChasing.traverse,1784,96.59,96.59
+2,__psynch_cvwait,32,1.73,98.32
+3,java.util.concurrent.atomic.LongAdder.add,4,0.22,98.54
+4,Monitor::wait_without_safepoint_check,2,0.11,98.65

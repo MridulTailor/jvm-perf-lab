@@ -1,0 +1,3 @@
+rank,frame,samples,self_pct,cumulative_pct
+1,byte[],90709,89.89,89.89
+2,lab.workload.AllocationHeavy$ShortLivedPayload,10195,10.1,100.0
