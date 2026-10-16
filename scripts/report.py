@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Performance Lab Report & Resume Metrics Generator (scripts/report.py)
-Strictly generates docs/RESULTS.md and docs/RESUME_METRICS.md from raw and processed artifacts.
+Performance Lab Report & Key Metrics Generator (scripts/report.py)
+Strictly generates docs/RESULTS.md and docs/KEY_METRICS.md from raw and processed artifacts.
 Enforces Hard Rule 1: No hand-typed or estimated numbers. Every metric links to source files.
 Stdlib only.
 """
@@ -200,10 +200,10 @@ def generate_reports(project_root):
     print(f"Generated {docs_dir / 'RESULTS.md'}")
 
     # =========================================================================
-    # 2. GENERATE docs/RESUME_METRICS.md (Key Verified Metrics)
+    # 2. GENERATE docs/KEY_METRICS.md (Key Verified Metrics)
     # =========================================================================
     m_lines = []
-    m_lines.append("# Key Verified Performance Metrics & Empirical Claims (`RESUME_METRICS.md`)")
+    m_lines.append("# Key Verified Performance Metrics & Empirical Claims (`KEY_METRICS.md`)")
     m_lines.append("")
     m_lines.append(f"**Target Environment**: Apple Silicon {hw.get('cpu', 'M1 Pro')} ({hw.get('arch', 'arm64')}), {hw.get('os_version', 'macOS')}, Amazon Corretto {jdk.get('version', '21')} ({jdk.get('vm_name', 'OpenJDK 64-Bit')}) | Measured: {datetime.now(timezone.utc).strftime('%Y-%m-%d')}")
     m_lines.append("")
@@ -325,12 +325,12 @@ def generate_reports(project_root):
         for u in unsupported_claims:
             m_lines.append(u)
     else:
-        m_lines.append("- *None: All evaluated resume claims had non-overlapping confidence intervals and robust statistical backing.*")
+        m_lines.append("- *None: All evaluated performance claims had non-overlapping confidence intervals and robust statistical backing.*")
     m_lines.append("")
 
-    with open(docs_dir / "RESUME_METRICS.md", "w", encoding="utf-8") as f:
+    with open(docs_dir / "KEY_METRICS.md", "w", encoding="utf-8") as f:
         f.write("\n".join(m_lines) + "\n")
-    print(f"Generated {docs_dir / 'RESUME_METRICS.md'}")
+    print(f"Generated {docs_dir / 'KEY_METRICS.md'}")
 
 if __name__ == "__main__":
     proj_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

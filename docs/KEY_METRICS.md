@@ -1,4 +1,4 @@
-# Key Verified Performance Metrics & Empirical Claims (`RESUME_METRICS.md`)
+# Key Verified Performance Metrics & Empirical Claims (`KEY_METRICS.md`)
 
 **Target Environment**: Apple Silicon Apple M1 Pro (arm64), macOS 15.3.2 (24D81), Amazon Corretto 21.0.12.1 (OpenJDK 64-Bit Server VM) | Measured: 2026-10-16
 

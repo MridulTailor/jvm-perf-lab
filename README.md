@@ -53,7 +53,7 @@ jvm-perf-lab/
     parse_profile.py           # Top-frames self-time extractor
     plot_warmup.py             # Vector SVG warmup curve generator
     plot_gc.py                 # Vector SVG GC pause latency chart generator
-    report.py                  # Generates RESULTS.md and RESUME_METRICS.md
+    report.py                  # Generates RESULTS.md and KEY_METRICS.md
     smoke.sh                   # End-to-end QUICK pipeline verification (<5 min)
   src/main/java/lab/
     workload/
@@ -74,7 +74,7 @@ jvm-perf-lab/
   docs/
     RESULTS.md                 # Full auto-generated performance matrices
     FINDINGS.md                # In-depth architectural analysis and verified hypotheses
-    RESUME_METRICS.md          # Formatted key metrics with confidence intervals
+    KEY_METRICS.md             # Formatted key metrics with confidence intervals
     warmup_curve.svg           # Vector JIT warmup curve chart
     gc_pauses.svg              # Vector GC pause latency comparison chart
 ```
