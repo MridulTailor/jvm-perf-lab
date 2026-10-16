@@ -33,7 +33,7 @@ def parse_jmh_file(path):
     for entry in data:
         bench_full = entry.get("benchmark", "")
         bench_name = bench_full.split(".")[-1]
-        prim = entry.get("primaryResult", {})
+        prim = entry.get("primaryMetric", {})
         score = prim.get("score", 0.0)
         error = prim.get("scoreError", 0.0)
         unit = prim.get("scoreUnit", "ops/s")
@@ -41,7 +41,7 @@ def parse_jmh_file(path):
         warmup_iters = entry.get("warmupIterations", 1)
         meas_iters = entry.get("measurementIterations", 1)
 
-        sec = entry.get("secondaryResults", {})
+        sec = entry.get("secondaryMetrics", {})
         alloc_rate_norm = 0.0
         if "gc.alloc.rate.norm" in sec:
             alloc_rate_norm = sec["gc.alloc.rate.norm"].get("score", 0.0)
